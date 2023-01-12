@@ -6,7 +6,7 @@
 */
 #include<stdio.h>
 #include<string.h>
-void reverse(char str[], int n){
+void strReverse(char str[], int n){
   char s[n+1];
   int i;
   for(i=0;i<n;i++) s[i] = str[n-i-1];
@@ -29,5 +29,5 @@ void addition(char str1[], char str2[] , char result[]){
   }
   if(carry) result[k++]='1';
   result[k]='\0';
-  reverse(result,strlen(result));
+  strReverse(result,strlen(result));
 }
